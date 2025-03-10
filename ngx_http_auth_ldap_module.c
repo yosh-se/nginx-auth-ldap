@@ -354,10 +354,10 @@ ngx_http_auth_ldap_ldap_server_block(ngx_conf_t *cf, ngx_command_t *cmd, void *c
     }
 
     ngx_memzero(server, sizeof(*server));
-    server->connect_timeout = 10000;
-    server->reconnect_timeout = 10000;
-    server->bind_timeout = 5000;
-    server->request_timeout = 10000;
+    server->connect_timeout = 3000;
+    server->reconnect_timeout = 3000;
+    server->bind_timeout = 3000;
+    server->request_timeout = 3000;
     server->alias = name;
     server->referral = 1;
 
